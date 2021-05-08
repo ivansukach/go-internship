@@ -1,10 +1,10 @@
 package tools
 
 import (
+	"fmt"
 	"testing"
 )
 
-// TestReverse tests the string reverse method implementation in a multiple cases.
 func TestReverse(t *testing.T) {
 	tests := map[string]struct {
 		input  string
@@ -23,8 +23,13 @@ func TestReverse(t *testing.T) {
 		t.Run(name, func(t *testing.T) {
 			result := Reverse(tc.input)
 			if tc.expRes != result {
-				t.Errorf("Reverse(%s) = %s; expRes %s", tc.input, result, tc.expRes)
+				t.Errorf("Reverse(%s) = %s; but expected %s", tc.input, result, tc.expRes)
 			}
 		})
 	}
+}
+
+func ExampleReverse() {
+	fmt.Println(Reverse("hello"))
+	// Output: olleh
 }
