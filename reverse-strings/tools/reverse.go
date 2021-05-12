@@ -1,16 +1,12 @@
+/*
+Package tools implements a simple library, that contains tools for work with strings.
+*/
 package tools
 
-func Reverse(in string) string {
-	tmp := make([]rune, len(in))
-	amt := 0
+//Reverse is a function that reverses a string
+func Reverse(in string) (result string) {
 	for _, v := range in {
-		tmp[amt] = v
-		amt++
+		result = string(v) + result
 	}
-	tmp = tmp[:amt]
-	reversed := make([]rune, amt)
-	for i, v := range tmp {
-		reversed[amt-i-1] = v
-	}
-	return string(reversed)
+	return
 }
