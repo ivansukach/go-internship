@@ -11,22 +11,7 @@ Repository contain reverse-strings module, that provide you tools to work with s
 Let's execute following steps to start:
 1. Git clone this repository
 2. Run: `cd [your project destination]`
-3. Build and run your application
-
-## Testing
-
-There are test files in repository. If you want to test application - run:
-```
-go test -v
-```
-If you want to run all tests of application - run:
-```
-go test -v ./...
-```
-To add test coverage - run
-```
-go test -v -coverpkg=./... -coverprofile=coverage.out ./...
-```
+3. Build and run applications
 
 ## Questions
 

@@ -16,7 +16,7 @@ func TestReverse(t *testing.T) {
 		"Chinese chars":         {input: "  中华人民共和国 ", expRes: " 国和共民人华中  "},
 		"Special Unicode chars": {input: "✠⚛✪⚡", expRes: "⚡✪⚛✠"},
 		"Diacritical chars":     {input: "ỗỆἣ", expRes: "ἣỆỗ"},
-		"":                      {input: "", expRes: ""},
+		"Empty string":          {input: "", expRes: ""},
 	}
 
 	for name, tc := range tests {
