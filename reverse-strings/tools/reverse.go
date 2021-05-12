@@ -1,4 +1,6 @@
-// Package tools implements a simple library, that contains tools for work with strings.
+/*
+Package tools implements a simple library, that contains tools for work with strings.
+*/
 package tools
 
 // Reverse is a function that reverses a string.
